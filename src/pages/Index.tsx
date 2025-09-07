@@ -2,8 +2,14 @@ import { PhoneFrame } from "@/components/PhoneFrame";
 import { WelcomeScreen } from "@/components/WelcomeScreen";
 import { LoginScreen } from "@/components/LoginScreen";
 import { SignUpScreen } from "@/components/SignUpScreen";
+import { ForgotPasswordScreen } from "@/components/ForgotPasswordScreen";
 import { DashboardScreen } from "@/components/DashboardScreen";
+import { OngoingMangaScreen } from "@/components/OngoingMangaScreen";
+import { CompletedMangaScreen } from "@/components/CompletedMangaScreen";
+import { MangaDetailScreen } from "@/components/MangaDetailScreen";
+import { ProfileScreen } from "@/components/ProfileScreen";
 import { AddMangaScreen } from "@/components/AddMangaScreen";
+import { EditMangaScreen } from "@/components/EditMangaScreen";
 
 const Index = () => {
   return (
@@ -20,7 +26,7 @@ const Index = () => {
       </div>
 
       {/* Phone Screens Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 px-6 pb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-6 pb-12">
         {/* Welcome Screen */}
         <div className="flex flex-col items-center">
           <h3 className="text-lg font-semibold text-slate-700 mb-4">Welcome Screen</h3>
@@ -51,6 +57,16 @@ const Index = () => {
           </div>
         </div>
 
+        {/* Forgot Password Screen */}
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-semibold text-slate-700 mb-4">Forgot Password Screen</h3>
+          <div className="scale-75 origin-top">
+            <PhoneFrame>
+              <ForgotPasswordScreen />
+            </PhoneFrame>
+          </div>
+        </div>
+
         {/* Dashboard Screen */}
         <div className="flex flex-col items-center">
           <h3 className="text-lg font-semibold text-slate-700 mb-4">Dashboard Screen</h3>
@@ -61,12 +77,62 @@ const Index = () => {
           </div>
         </div>
 
+        {/* Ongoing Manga Screen */}
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-semibold text-slate-700 mb-4">Ongoing Manga Screen</h3>
+          <div className="scale-75 origin-top">
+            <PhoneFrame>
+              <OngoingMangaScreen />
+            </PhoneFrame>
+          </div>
+        </div>
+
+        {/* Completed Manga Screen */}
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-semibold text-slate-700 mb-4">Completed Manga Screen</h3>
+          <div className="scale-75 origin-top">
+            <PhoneFrame>
+              <CompletedMangaScreen />
+            </PhoneFrame>
+          </div>
+        </div>
+
+        {/* Manga Detail Screen */}
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-semibold text-slate-700 mb-4">Manga Detail Screen</h3>
+          <div className="scale-75 origin-top">
+            <PhoneFrame>
+              <MangaDetailScreen />
+            </PhoneFrame>
+          </div>
+        </div>
+
+        {/* Profile Screen */}
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-semibold text-slate-700 mb-4">Profile Screen</h3>
+          <div className="scale-75 origin-top">
+            <PhoneFrame>
+              <ProfileScreen />
+            </PhoneFrame>
+          </div>
+        </div>
+
         {/* Add Manga Screen */}
         <div className="flex flex-col items-center">
           <h3 className="text-lg font-semibold text-slate-700 mb-4">Add Manga Screen</h3>
           <div className="scale-75 origin-top">
             <PhoneFrame>
               <AddMangaScreen />
+            </PhoneFrame>
+          </div>
+        </div>
+
+        {/* Edit Manga Screen */}
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-semibold text-slate-700 mb-4">Edit Manga Screen</h3>
+          <div className="scale-75 origin-top">
+            <PhoneFrame>
+              <EditMangaScreen />
             </PhoneFrame>
           </div>
         </div>
